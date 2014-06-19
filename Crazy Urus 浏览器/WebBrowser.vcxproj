@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C3FA47BA-FEBD-45C9-A1C0-080C621997D6}</ProjectGuid>
+    <RootNamespace>浏览器—可视化课设</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>Crazy Urus 浏览器</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>windowscodecs.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\图片\Basicset\Basic_set_Ico\warning.ico" />
+    <None Include="..\..\..\VB6\程序文件夹6\Webbrowser\32\warning_32.png" />
+    <None Include="hlp\afx_hidd_color.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\afx_hidd_fileopen.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\afx_hidd_filesave.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\afx_hidd_find.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\afx_hidd_font.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\afx_hidd_newtypedlg.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\afx_hidd_print.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\afx_hidd_printdlg.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\afx_hidd_printsetup.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\afx_hidd_replace.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\afx_hidp_default.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\afx_hidw_dockbar_top.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\afx_hidw_preview_bar.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\afx_hidw_status_bar.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\afx_hidw_toolbar.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hidr_doc1type.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_app_about.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_app_exit.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_context_help.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_edit_clear.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_edit_clear_all.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_edit_copy.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_edit_cut.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_edit_find.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_edit_paste.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_edit_redo.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_edit_repeat.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_edit_replace.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_edit_undo.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_file_close.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_file_mru_file1.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_file_new.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_file_open.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_file_page_setup.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_file_print.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_file_print_preview.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_file_print_setup.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_file_save.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_file_save_as.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_file_send_mail.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_help_index.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_help_using.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_ht_caption.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_ht_nowhere.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_next_pane.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_prev_pane.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_sc_close.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_sc_maximize.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_sc_minimize.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_sc_move.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_sc_nextwindow.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_sc_prevwindow.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_sc_restore.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_sc_size.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_sc_tasklist.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_view_ruler.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_view_status_bar.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_view_toolbar.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_window_all.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_window_arrange.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_window_cascade.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_window_new.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_window_split.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_window_tile.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_window_tile_horz.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_window_tile_vert.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\Images\Bullet.gif" />
+    <None Include="hlp\main_index.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\menu_edit.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\menu_file.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\menu_help.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\menu_view.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\menu_window.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\My.hhc" />
+    <None Include="hlp\My.hhk" />
+    <CustomBuild Include="hlp\My.hhp">
+      <FileType>Document</FileType>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)浏览器—可视化课设.chm;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">hlp\HTMLDefines.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">start /wait hhc "hlp\My.hhp"
+if not exist "hlp\My.chm" goto :HelpError
+copy "hlp\My.chm" "$(OutDir)浏览器—可视化课设.chm"
+goto :HelpDone
+:HelpError
+echo hlp\My.hhp(1) : error:创建帮助文件时遇到问题
+echo.
+:HelpDone
+echo.
+</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">正在生成帮助文件...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)浏览器—可视化课设.chm;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">hlp\HTMLDefines.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">start /wait hhc "hlp\My.hhp"
+if not exist "hlp\My.chm" goto :HelpError
+copy "hlp\My.chm" "$(OutDir)浏览器—可视化课设.chm"
+goto :HelpDone
+:HelpError
+echo hlp\My.hhp(1) : error:创建帮助文件时遇到问题
+echo.
+:HelpDone
+echo.
+</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">正在生成帮助文件...</Message>
+    </CustomBuild>
+    <None Include="hlp\scrollbars.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="ReadMe.txt" />
+    <None Include="res\bitmap1.bmp" />
+    <None Include="res\block_32.png" />
+    <None Include="res\buttons.bmp" />
+    <None Include="res\document_32.png" />
+    <None Include="res\filelarge.bmp" />
+    <None Include="res\filesmall.bmp" />
+    <None Include="res\gear_32.png" />
+    <None Include="res\help_32.png" />
+    <None Include="res\home_32.png" />
+    <None Include="res\info.bmp" />
+    <None Include="res\info_32.png" />
+    <None Include="res\left.bmp" />
+    <None Include="res\left_32.png" />
+    <None Include="res\main.bmp" />
+    <None Include="res\monitor_32.png" />
+    <None Include="res\My.rc2" />
+    <None Include="res\print_32.png" />
+    <None Include="res\ribbon.mfcribbon-ms" />
+    <None Include="res\right_32.png" />
+    <None Include="res\save_32.png" />
+    <None Include="res\search_32.png" />
+    <None Include="res\Toolbar.bmp" />
+    <None Include="res\Toolbar256.bmp" />
+    <None Include="res\trash_32.png" />
+    <None Include="res\warning.ico" />
+    <None Include="res\writelarge.bmp" />
+    <None Include="res\writesmall.bmp" />
+    <None Include="res\WebBrowser.ico" />
+    <None Include="res\WebBrowserDoc.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="CloseDlg.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MyView.h" />
+    <CustomBuild Include="Resource.h">
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">hlp\HTMLDefines.h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">echo // 生成的帮助映射文件。使用者为My.HHP. &gt; "hlp\HTMLDefines.h"
+echo. &gt; "hlp\HTMLDefines.h"
+echo // 命令(ID_* 和 IDM_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h ID_,HID_,0x10000 IDM_,HIDM_,0x10000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // 提示(IDP_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h IDP_,HIDP_,0x30000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // 资源(IDR_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h IDR_,HIDR_,0x20000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // 对话框(IDD_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h IDD_,HIDD_,0x20000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // 框架控件(IDW_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h /a afxhh.h IDW_,HIDW_,0x50000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">正在生成帮助编译器的映射文件...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">hlp\HTMLDefines.h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">echo // 生成的帮助映射文件。使用者为My.HHP. &gt; "hlp\HTMLDefines.h"
+echo. &gt; "hlp\HTMLDefines.h"
+echo // 命令(ID_* 和 IDM_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h ID_,HID_,0x10000 IDM_,HIDM_,0x10000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // 提示(IDP_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h IDP_,HIDP_,0x30000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // 资源(IDR_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h IDR_,HIDR_,0x20000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // 对话框(IDD_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h IDD_,HIDD_,0x20000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // 框架控件(IDW_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h /a afxhh.h IDW_,HIDW_,0x50000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">正在生成帮助编译器的映射文件...</Message>
+    </CustomBuild>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="WebBrowser.h" />
+    <ClInclude Include="WebBrowserDoc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="CloseDlg.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MyView.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="WebBrowser.cpp" />
+    <ClCompile Include="WebBrowserDoc.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WebBrowser.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="浏览器—可视化课设.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

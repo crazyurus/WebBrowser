@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<HTML>
+
+<HEAD>
+
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=gb2312">
+
+<TITLE>(修改文档)</TITLE>
+
+</HEAD>
+
+
+
+<BODY>
+
+
+
+
+
+<P><A NAME="hidr_doc1type"></A><B>修改文档</B></P>
+
+
+
+<P>&lt;&lt;在此编写应用程序特定的帮助，以提供用户应如何使用您的应用程序修改文档的概述。  </P>
+
+
+
+<P>如果应用程序支持多种文档类型而且希望每种类型都有一个单独的帮助主题，则使用帮助上下文 ID，
+
+它是通过运行由应用程序向导产生的 MAKEHELP.BAT 文件
+
+而生成的。或者，也可以按如下方式运行 MAKEHM:</P>
+
+
+
+<P>makehm IDR_HIDR_,0x2000 resource.h</P>
+
+
+
+<P>例如，如果某个文档类型的 IDR_ 符号为 IDR_CHARTTYPE，则由 MAKEHM 生成的帮助上下文 ID
+
+将是 HIDR_CHARTTYPE。</P>
+
+
+
+<P>注意: 应用程序向导定义有关该应用程序支持的第一种文档类型的帮助主题所使用的 HIDR_DOC1TYPE 帮助上下文 ID。
+
+应用程序向导在 .hpj 文件中为应用程序产生一个别名，并将 HIDR_DOC1TYPE 映射到由该文档类型的 MAKEHM 产生的 HIDR_。&gt;&gt;</P>
+
+
+
+</BODY>
+
+</HTML>
+

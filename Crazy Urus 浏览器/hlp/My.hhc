@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&lt;&lt;ÄúµÄÓ¦ÓÃ³ÌÐò&gt;&gt; °ïÖúË÷Òý">
+		<param name="Local" value="main_index.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="²Ëµ¥">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="¡°ÎÄ¼þ¡±²Ëµ¥ÃüÁî">
+			<param name="Local" value="menu_file.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="¡°±à¼­¡±²Ëµ¥ÃüÁî">
+			<param name="Local" value="menu_edit.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="¡°ÊÓÍ¼¡±²Ëµ¥ÃüÁî">
+			<param name="Local" value="menu_view.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="¡°´°¿Ú¡±²Ëµ¥ÃüÁî">
+			<param name="Local" value="menu_window.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="¡°°ïÖú¡±²Ëµ¥ÃüÁî">
+			<param name="Local" value="menu_help.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="×´Ì¬À¸">
+		<param name="Local" value="afx_hidw_status_bar.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="¹¤¾ßÀ¸">
+		<param name="Local" value="afx_hidw_toolbar.htm">
+		</OBJECT>
+</UL>
+</BODY></HTML>
